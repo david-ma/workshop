@@ -7,7 +7,7 @@
  Researcher in the same room as programmer and analysts and help to derive viable solution 
 
 **Did hackathon ever produced viable outputs for researchers?**  
- Pipeline analysis from 100 files in *n* different folders from data consolidation and thereby helping researchers 
+ Pipeline analysis from 100 files in *n* different folders for data consolidation,thereby helping researcher to quickly work on  complete dataset
 
 **what is git?**  
 Version control system 
