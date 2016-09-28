@@ -9,5 +9,5 @@
 **Did hackathon ever produced viable outputs for researchers?**  
  Pipeline analysis from 100 files in *n* different folders from data consolidation and thereby helping researchers 
 
-**what is git?**  
+**What is git?**  
 Version control system 
