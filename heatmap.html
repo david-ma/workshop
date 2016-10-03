@@ -36,9 +36,10 @@
           legendElementWidth = gridSize*2,
           buckets = 9,
           colors = ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"], // alternatively colorbrewer.YlGnBu[9]
-          days = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
-          times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p", "12p"];
-          datasets = ["data.tsv"];
+          sample_names = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+          times = [
+                  "Off_target_2_BRCA1_18","Off_target_6_BRCA1_18","Off_target_9_PTEN_9_5","Off_target_9_PTEN_5_2","PTEN_1_1","PTEN_1_2","PTEN_2_1","PTEN_2_2","PTEN_3_1","PTEN_4_1","PTEN_4_2","PTEN_5_1","PTEN_5_2","PTEN_5_3","PTEN_6_1","PTEN_6_2","PTEN_6_3r_1","PTEN_7_1","PTEN_7_2","PTEN_7_3","PTEN_8_1","PTEN_8_2","PTEN_8_3","PTEN_9_2","PTEN_9_3","PTEN_9_4","PTEN_9_5","BRCA2_MCPV2_1","BRCA2_MCPV2_2","BRCA2_MCPV2_3","BRCA2_MCPV2_4","BRCA2_MCPV2_5","BRCA2_MCPV2_6r_2","BRCA2_MCPV2_7","BRCA2_MCPV2_8","BRCA2_MCPV2_9","BRCA2_MCPV2_10","BRCA2_MCPV2_11","BRCA2_MCPV2_12","BRCA2_MCPV2_13","BRCA2_MCPV2_14","BRCA2_MCPV2_15","BRCA2_MCPV2_16","BRCA2_MCPV2_17","BRCA2_MCPV2_18","BRCA2_MCPV2_19","BRCA2_MCPV2_20","BRCA2_MCPV2_21","BRCA2_MCPV2_22","BRCA2_MCPV2_23","BRCA2_MCPV2_24r_1","BRCA2_MCPV2_25","BRCA2_MCPV2_26","BRCA2_MCPV2_27","BRCA2_MCPV2_28","BRCA2_MCPV2_29","BRCA2_MCPV2_30","BRCA2_MCPV2_31","BRCA2_MCPV2_32","BRCA2_MCPV2_33","BRCA2_MCPV2_34","BRCA2_MCPV2_35","BRCA2_MCPV2_36","BRCA2_MCPV2_37r_1","BRCA2_MCPV2_38","BRCA2_MCPV2_39","BRCA2_MCPV2_40","BRCA2_MCPV2_41","BRCA2_MCPV2_42","BRCA2_MCPV2_43","BRCA2_MCPV2_44","BRCA2_MCPV2_45r_1","BRCA2_MCPV2_46","BRCA2_MCPV2_46a","BRCA2_MCPV2_47","BRCA2_MCPV2_48","BRCA2_MCPV2_49","BRCA2_MCPV2_50","BRCA2_MCPV2_51","BRCA2_MCPV2_52","BRCA2_MCPV2_53r_1","BRCA2_MCPV2_54r_1","BRCA2_MCPV2_55","BRCA2_MCPV2_56","BRCA2_MCPV2_57","BRCA2_MCPV2_58","BRCA2_MCPV2_59","BRCA2_MCPV2_60","BRCA2_MCPV2_61","BRCA2_MCPV2_62","BRCA2_MCPV2_63","BRCA2_MCPV2_64","BRCA2_MCPV2_65","BRCA2_MCPV2_66","BRCA2_MCPV2_67r_1","BRCA2_MCPV2_68","BRCA2_MCPV2_69","BRCA2_MCPV2_70r_1","BRCA2_MCPV2_71","BRCA2_MCPV2_72","BRCA2_MCPV2_73","BRCA2_MCPV2_74","BRCA2_MCPV2_75","BRCA2_MCPV2_76","BRCA2_MCPV2_77r_2","BRCA2_MCPV2_78","BRCA2_MCPV2_79","BRCA2_MCPV2_80","BRCA2_MCPV2_81","BRCA2_MCPV2_82","BRCA2_MCPV2_83","BRCA2_MCPV2_84r_1","BRCA2_MCPV2_85","BRCA2_MCPV2_86","BRCA2_MCPV2_87r_1","BRCA2_MCPV2_88","BRCA2_MCPV2_89","BRCA2_MCPV2_90","BRCA2_MCPV2_91","BRCA2_MCPV2_92","BRCA2_MCPV2_93","BRCA2_MCPV2_94","BRCA2_MCPV2_95","BRCA2_MCPV2_96r_1","BRCA2_MCPV2_97","BRCA2_MCPV2_98r_1","BRCA2_MCPV2_99","BRCA2_MCPV2_100r_1","BRCA2_MCPV2_101","BRCA2_MCPV2_102","BRCA2_MCPV2_103","BRCA2_MCPV2_104","BRCA2_MCPV2_105","BRCA2_MCPV2_106","BRCA2_MCPV2_107","BRCA2_MCPV2_108","BRCA2_MCPV2_109","BRCA2_MCPV2_110","BRCA2_MCPV2_111","BRCA2_MCPV2_112r_1","BRCA2_MCPV2_113","BRCA2_MCPV2_114","BRCA2_MCPV2_115","BRCA2_MCPV2_116","BRCA2_MCPV2_117","BRCA2_MCPV2_118r_1","BRCA2_MCPV2_119","BRCA2_MCPV2_120","BRCA2_MCPV2_121","Off_target_13_BRCA1_18","TP53_MCPV2_1","TP53_MCPV2_2r_1","TP53_MCPV2_3","TP53_MCPV2_4r_1","TP53_MCPV2_5r_1","TP53_MCPV2_6","TP53_MCPV2_8","TP53_MCPV2_9","TP53_MCPV2_10","TP53_MCPV2_11r_1","TP53_MCPV2_12","TP53_MCPV2_13","TP53_MCPV2_14","TP53_MCPV2_15","TP53_MCPV2_16","TP53_MCPV2_17","TP53_MCPV2_18","TP53_MCPV2_19","TP53_MCPV2_20","TP53_MCPV2_21","BRCA1_MCPV2_1","BRCA1_MCPV2_2","BRCA1_MCPV2_3","BRCA1_MCPV2_4","BRCA1_MCPV2_5","BRCA1_MCPV2_6","BRCA1_MCPV2_8","BRCA1_MCPV2_9","BRCA1_MCPV2_10","BRCA1_MCPV2_11","BRCA1_MCPV2_12","BRCA1_MCPV2_13","BRCA1_MCPV2_14","BRCA1_MCPV2_15","BRCA1_MCPV2_16","BRCA1_MCPV2_17","BRCA1_MCPV2_18","BRCA1_MCPV2_19","BRCA1_MCPV2_20","BRCA1_MCPV2_21","BRCA1_MCPV2_22","BRCA1_MCPV2_23","BRCA1_MCPV2_24","BRCA1_MCPV2_25","BRCA1_MCPV2_26","BRCA1_MCPV2_27","BRCA1_MCPV2_28","BRCA1_MCPV2_29","BRCA1_MCPV2_30","BRCA1_MCPV2_31","BRCA1_MCPV2_32","BRCA1_MCPV2_33","BRCA1_MCPV2_34","BRCA1_MCPV2_35","BRCA1_MCPV2_36","BRCA1_MCPV2_37","BRCA1_MCPV2_38","BRCA1_MCPV2_39","BRCA1_MCPV2_40","BRCA1_MCPV2_41","BRCA1_MCPV2_42","BRCA1_MCPV2_43","BRCA1_MCPV2_44","BRCA1_MCPV2_45r_1","BRCA1_MCPV2_46","BRCA1_MCPV2_47","BRCA1_MCPV2_48","BRCA1_MCPV2_49","BRCA1_MCPV2_50","BRCA1_MCPV2_51","BRCA1_MCPV2_52","BRCA1_MCPV2_53","BRCA1_MCPV2_54","BRCA1_MCPV2_55","BRCA1_MCPV2_56r_1","BRCA1_MCPV2_57","BRCA1_MCPV2_58","BRCA1_MCPV2_59","BRCA1_MCPV2_60","BRCA1_MCPV2_61","BRCA1_MCPV2_62r_2","BRCA1_MCPV2_62r_2_2","BRCA1_MCPV2_64","BRCA1_MCPV2_66r_1","Off_target_BRCA1_66r1","Off_target_20_BRCA1_18","Off_target_2_BRCA1_18","Off_target_6_BRCA1_18","Off_target_9_PTEN_9_5","Off_target_9_PTEN_5_2"];
+          datasets = ["heatmap.tsv"];
 
       var svg = d3.select("#chart").append("svg")
           .attr("width", width + margin.left + margin.right)
@@ -46,15 +47,15 @@
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      var dayLabels = svg.selectAll(".dayLabel")
-          .data(days)
+      var sample_nameLabels = svg.selectAll(".sample_nameLabel")
+          .data(sample_names)
           .enter().append("text")
             .text(function (d) { return d; })
             .attr("x", 0)
             .attr("y", function (d, i) { return i * gridSize; })
             .style("text-anchor", "end")
             .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
-            .attr("class", function (d, i) { return ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-workweek" : "dayLabel mono axis"); });
+            .attr("class", function (d, i) { return ((i >= 0 && i <= 4) ? "sample_nameLabel mono axis axis-workweek" : "sample_nameLabel mono axis"); });
 
       var timeLabels = svg.selectAll(".timeLabel")
           .data(times)
@@ -70,35 +71,35 @@
         d3.tsv(tsvFile,
         function(d) {
           return {
-            day: +d.day,
-            hour: +d.hour,
-            value: +d.value
+            sample_name: +d.sample_name,
+            amplicon: +d.amplicon,
+            readsout: +d.readsout
           };
         },
         function(error, data) {
           var colorScale = d3.scale.quantile()
-              .domain([0, buckets - 1, d3.max(data, function (d) { return d.value; })])
+              .domain([0, buckets - 1, d3.max(data, function (d) { return d.readsout; })])
               .range(colors);
 
-          var cards = svg.selectAll(".hour")
-              .data(data, function(d) {return d.day+':'+d.hour;});
+          var cards = svg.selectAll(".amplicon")
+              .data(data, function(d) {return d.sample_name+':'+d.amplicon;});
 
           cards.append("title");
 
           cards.enter().append("rect")
-              .attr("x", function(d) { return (d.hour - 1) * gridSize; })
-              .attr("y", function(d) { return (d.day - 1) * gridSize; })
+              .attr("x", function(d) { return (d.amplicon - 1) * gridSize; })
+              .attr("y", function(d) { return (d.sample_name - 1) * gridSize; })
               .attr("rx", 4)
               .attr("ry", 4)
-              .attr("class", "hour bordered")
+              .attr("class", "amplicon bordered")
               .attr("width", gridSize)
               .attr("height", gridSize)
               .style("fill", colors[0]);
 
           cards.transition().duration(1000)
-              .style("fill", function(d) { return colorScale(d.value); });
+              .style("fill", function(d) { return colorScale(d.readsout); });
 
-          cards.select("title").text(function(d) { return d.value; });
+          cards.select("title").text(function(d) { return d.readsout; });
           
           cards.exit().remove();
 
@@ -133,7 +134,7 @@
 
       datasetpicker.enter()
         .append("input")
-        .attr("value", function(d){ return "Dataset " + d })
+        .attr("readsout", function(d){ return "Dataset " + d })
         .attr("type", "button")
         .attr("class", "dataset-button")
         .on("click", function(d) {
