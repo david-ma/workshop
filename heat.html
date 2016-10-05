@@ -76,6 +76,11 @@ header h2 {
 	color: black;
 	text-anchor: end;
 }
+rect.bordered {
+	stroke: #E6E6E6;
+	stroke-width: 1px;
+}
+
 
 </style>
 </head>
@@ -249,8 +254,11 @@ header h2 {
 				Object.keys(amplicons[amplicon]).forEach(function(sample){
 
 					g.append("rect").attrs({
+						class: 'bordered',
 						x: labelX,
 						y: labelY,
+						rx: 2,
+						ry: 2,
 						height: boxSize,
 						width: boxSize,
 						fill: colorScale(amplicons[amplicon][sample].readsout)
